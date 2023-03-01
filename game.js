@@ -22,6 +22,7 @@ function game() {
     let computerScore = 0;
     for (let i = 0; i < 5; i++) {
         let playerSelection = prompt("Make your selection of Rock, Paper or Scissors:");
+        while (playRound(playerSelection))
         if (playRound(playerSelection, getComputerChoice()) === 'Win') {
             playerScore++;
         }
@@ -49,6 +50,15 @@ function isWin(playerScore, computerScore) {
     }
     else if (playerScore < computerScore) {
         return false;
+    }
+}
+
+function isValidInput(playerSelection) {
+    if ((ps != 'Rock') || (ps != 'Paper') || (ps != 'Scissors')) {
+        return false;
+    }
+    else {
+        return true;
     }
 }
 
