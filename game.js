@@ -18,17 +18,17 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    let playerSelection = prompt("Make your selection of Rock, Paper or Scissors:");
     let playerScore = 0;
     let computerScore = 0;
-    for (let i = 0, i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Make your selection of Rock, Paper or Scissors:");
         if (playRound(playerSelection, getComputerChoice()) === true) {
             playerScore++;
         }
         else if (playRound(playerSelection, getComputerChoice()) === false) {
             computerScore++;
         }
-        console.log(playerScore + ":" + computerScore);
+        // console.log(playerScore + ":" + computerScore);
     }
 }
 
