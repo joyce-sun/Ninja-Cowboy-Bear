@@ -30,5 +30,17 @@ function game() {
         }
         // console.log(playerScore + ":" + computerScore);
     }
+
+    if 
 }
+
+function whoWon(playerScore, computerScore) {
+    if (playerScore > computerScore) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 
