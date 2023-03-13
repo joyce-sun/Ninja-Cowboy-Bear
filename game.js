@@ -76,6 +76,7 @@ function resetGame() {
     playerPoints.textContent = "Your Score: " + playerScore;
     computerPoints.textContent = "Computer Score: " + computerScore; 
     results.textContent = '';
+    roundResults.textContent = '';
 }
 
 
