@@ -104,6 +104,7 @@ h1 {
     font-size: 42px;
     font-weight: bolder;
     margin-top: 18px;
+    text-align: center;
 }
 
 .replay button {
