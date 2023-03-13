@@ -39,10 +39,7 @@ h1 {
     font-family: 'boncegro', cursive;
     padding: 10px 24px 10px 24px;
     font-size: 24px;
-    background-color: #a4aa7d;
-    display: flex;
-    flex-shrink: 0;
-    
+    background-color: #a4aa7d;    
 }
 
 .container {
@@ -64,6 +61,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 48px;
+    flex-wrap: wrap;
 }
 
 .buttonClass button {
