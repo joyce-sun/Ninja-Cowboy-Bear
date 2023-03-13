@@ -27,15 +27,15 @@ h1 {
 
 .rules {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 24px;
 }
 
 .rules button {
     border: none;
     border-radius: 4px;
-    /* margin-left: 24px;
-    margin-right: 24px; */
+    margin-left: 24px;
+    margin-right: 24px;
     font-family: 'boncegro', cursive;
     padding: 10px 24px 10px 24px;
     font-size: 24px;
