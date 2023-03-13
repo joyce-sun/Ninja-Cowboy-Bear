@@ -1,0 +1,85 @@
+body {
+    font-family: 'boncegro', cursive;
+    background-color: #e9d9cd;
+}
+
+header {
+    font-size: 48px;
+    word-spacing: 3rem;
+    text-align: center;
+}
+
+header span.mustard-text {
+    color: #bc5c24;
+}
+
+header span.brown-text {
+    color: #64442c;
+}
+
+h1 {
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.rules {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.rules button {
+    border: none;
+    border-radius: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-family: 'boncegro', cursive;
+    padding: 10px 24px 10px 24px;
+    font-size: 24px;
+    background-color: #a4aa7d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fab05a;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.container .roundResults {
+    color: #727e4b;
+    font-size: 32px;
+}
+
+.buttonClass {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.buttonClass button {
+    padding: 12px 30px 12px 30px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+#rock {
+    background-color: black;
+}
+
+#paper {
+    background-color: #bc5c24;
+}
+
+#scissors {
+    background-color: #64442c;
+}
+
+
+.sign {
+    font-size: 80px;
+}

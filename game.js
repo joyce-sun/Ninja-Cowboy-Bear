@@ -9,6 +9,7 @@ const scissorsBtn = document.getElementById('scissors');
 const playerPoints = document.querySelector('#playerScore');
 const computerPoints = document.querySelector('#computerScore'); 
 const results = document.querySelector('.results');
+const roundResults = document.querySelector('.roundResults');
 
 
 rockBtn.addEventListener('click', () => handleClick('Rock'));
@@ -26,21 +27,21 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection === computerSelection) {
-        roundWinner = 'Tie';
+        roundWinner = 'You have tied this round!';
     }
 
     if ((playerSelection === 'Rock' && computerSelection === 'Scissors') || 
     (playerSelection === 'Paper' && computerSelection ===  'Rock') || 
     (playerSelection === 'Scissors' && computerSelection === 'Paper')) {
         playerScore++;
-        roundWinner = 'Player';
+        roundWinner = 'You have won this round!';
     }
     
     if ((playerSelection === 'Rock' && computerSelection === 'Paper') || 
     (playerSelection === 'Paper' && computerSelection ===  'Scissors') || 
     (playerSelection === 'Scissors' && computerSelection === 'Rock')) {
         computerScore++;
-        roundWinner = 'Computer';
+        roundWinner = 'You have lost this round!';
     }
 }
 
@@ -56,17 +57,15 @@ function handleClick(playerSelection) {
 
     let computerChoice = getComputerChoice();
     playRound(playerSelection, computerChoice);
-    playerPoints.textContent = playerScore;
-    computerPoints.textContent = computerScore; 
+    playerPoints.textContent = "Your Score: " + playerScore;
+    computerPoints.textContent = "Computer Score: " + computerScore;
+    roundResults.textContent = roundWinner;
 
     if (isGameOver()) {
         return playerScore > computerScore 
-            ? (results.textContent = 'You have won!')
-            : (results.textContent = 'You have lost!')
+            ? (results.textContent = 'Congrats! You have won the game.')
+            : (results.textContent = 'Sorry, you have lost the game.')
     }
-
-    console.log(playerSelection + ":" + computerChoice)
-    console.log(playerScore + ":" + computerScore)
 }
 
 function resetGame() {

@@ -8,23 +8,46 @@
     <title>Ninja Cowboy Bear</title>
 </head>
 <body>
-    <header>Ninja Cowboy Bear</header>
+    <header>
+        <span class="black-text">Ninja</span>
+        <span class="mustard-text">Cowboy</span>
+        <span class="brown-text">Bear</span>
+    </header>
 
-    <div class="buttonClass">
-        <button id="rock">Ninja</button>
-        <button id="paper">Bear</button>
-        <button id="scissors">Cowboy</button>
+    <h1>First to 5 wins!</h1>
+    <div class="rules">
+        <button id="ninja">🥷 Beats 🤠</button>
+        <button id="cowboy">🤠 Beats 🐻</button>
+        <button id="bear">🐻 Beats 🥷</button>
     </div>
 
-    <div class="scores">
-        <div id="playerScore"></div>
-        <div id="computerScore"></div>
-    </div>
+    <div class="container">
 
-    <div class="results"></div>
+        <div class="roundResults"></div>
 
-    <div class="replay">
-        <button id="replay">Replay</button>
+        <div class="scores">
+            <div id="playerScore"></div>
+            <div id="computerScore"></div>
+        </div>
+
+        <div class="buttonClass">
+            <button id="rock">
+                <div class="sign">🥷</div>
+            </button>
+            <button id="paper">
+                <div class="sign">🐻</div>
+            </button>
+            <button id="scissors">
+                <div class="sign">🤠</div>
+            </button>
+        </div>
+    
+        
+        <div class="results"></div>
+    
+        <div class="replay">
+            <button id="replay">Replay</button>
+        </div>
     </div>
     
     
