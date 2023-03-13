@@ -25,7 +25,7 @@ h1 {
 .rules {
     display: flex;
     justify-content: center;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 .rules button {
@@ -42,14 +42,15 @@ h1 {
 .container {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: #fab05a;
     padding-top: 20px;
     padding-bottom: 50px;
 }
 
 .container .roundResults {
-    color: #727e4b;
+    color: #717f4b;
     font-size: 32px;
 }
 
@@ -82,4 +83,33 @@ h1 {
 
 .sign {
     font-size: 80px;
+}
+
+.scores {
+    background-color: black;
+    border-radius: 2px;
+    color: #e9d9cd;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 12px 0px 24px 0px;
+    font-size: 24px;
+}
+
+.results {
+    font-size: 42px;
+    font-weight: bolder;
+    margin-top: 18px;
+}
+
+.replay button {
+    border: none;
+    font-family: 'boncegro', cursive;
+    border-radius: 8px;
+    border: none;
+    background-color: #737c4b;
+    color: #cfdac6;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
 }
