@@ -1,6 +1,8 @@
 body {
     font-family: 'boncegro', cursive;
     background-color: #e9d9cd;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
